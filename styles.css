@@ -1,0 +1,85 @@
+body,html{
+  background-image:url('https://unsplash.com/photos/round-brown-wooden-table-with-french-press-on-top-with-white-ceramic-teacup-beside-3b2tADGAWnU');
+  background-size:cover;
+  background-position:center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  
+  background-color:rgb(245,222,179);
+  color:rgb(38,38,38);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+header,footer{
+  background-color:rgb(111,78,55);
+  color:rgb(255,250,240);
+  padding:20px;
+  text-align:center;
+}
+
+label,legend{
+  display:block;
+  margin: 0.5rem 10;
+}
+
+input,select{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+title{
+  margin:auto;
+  color:brown;
+}
+
+form{
+  width: 90%;
+  max-width: 500px;
+  min-width: 300px;
+  margin:auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom:5px;
+  background-color:rgb(255,250,240);
+  border:1px solid rgb(150,111,81);
+  border-radius: 10px;
+
+}
+.inline{
+  display: inline;
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle; 
+}
+
+.submit{
+  background-color:rgb(176,87,61);
+  color:rgb(255,250,240);
+  padding:10px 20px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+.submit:hover{
+   background-color: #5A2E2A;
+}
+textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical; 
+}

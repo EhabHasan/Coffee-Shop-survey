@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+    <title>Coffee shop Survey </title>
+
+  </head>
+
+  <body>
+    <div class="full-page">
+    <header>
+    <h1 id="title">Coffee shop Survey</h1>
+    </header>
+    <main>
+    <p id="description">Thank you for taking the time to help us improve our shop</p>
+      
+    <form id="survey-form" action="server-endpoint" method="POST">
+
+      <label for="name" id="name-label">Name
+     <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+
+      <label for="email" id="email-label">email
+     <input type="email" name="email" id="email" placeholder="Enter your email" required></label>
+
+     <label for="number" id="number-label">Age (optional)
+     <input type="number" name="number" id="number" placeholder="Age" min="10" max="99"></label>
+   
+    <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Facebook</option>
+            <option value="2">Istagram</option>
+            <option value="3">From a friend</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+
+         <legend>would you recommend us to a friend?</legend>
+        <label for="Definitely"><input id="Definitely" type="radio" value="definitely" name="recommendation" class="inline" checked /> Definitely</label>
+
+        <label for="Maybe"><input id="Maybe" type="radio" value="maybe" name="recommendation" class="inline" /> Maybe</label>
+
+         <label for="Not sure"><input id="Not sure" type="radio" value="notsure" name="recommendation" class="inline" /> Not sure</label>
+
+         
+
+         <label for="favorite">what is your favorite thing about out store
+          <select id="favorite" name="favorite">
+            <option value="">(select one)</option>
+            <option value="1">Drinks</option>
+            <option value="2">Decoration</option>
+            <option value="3">Servise</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+
+        
+<legend>
+  What would you like to see improved?
+</legend>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" class="inline" value="Drinks" /> Drinks</label>
+         <label for="improve"><input id="improve" type="checkbox" name="improve" class="inline" value="Menu" /> Menu</label>
+          <label for="improve"><input id="improve" type="checkbox" name="improve" class="inline" value="Decoration" /> Decoration</label>
+           <label for="improve"><input id="improve" type="checkbox" name="improve" class="inline" value="Price" /> Price</label>
+            <label for="improve"><input id="improve" type="checkbox" name="improve" class="inline" value="Service" /> Service</label>
+             <label for="improve"><input id="improve" type="checkbox" name="improve" class="inline" value="Music" /> Music</label>
+     
+
+      <label>Any comments or suggestions?</label>
+      
+      <textarea rows="4" placeholder="Enter your comment or suggestion here..."></textarea>
+
+<input type="submit" class="submit" value="Supmit" id="submit">
+
+    </form>
+    </main>
+    <footer>
+<p>Thank you for your feedback</p>
+      </footer>
+      </div>
+  </body>
+
+</html>
